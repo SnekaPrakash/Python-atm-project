@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Withdraw</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Withdraw Money</h1>
+    <form method="POST">
+        <label for="amount">Enter amount to withdraw:</label>
+        <input type="number" name="amount" id="amount" required>
+        <button type="submit">Withdraw</button>
+    </form>
+    <a href="/menu">Back to Main Menu</a>
+</body>
+</html>

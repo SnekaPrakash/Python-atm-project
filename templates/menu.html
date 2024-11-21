@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Main Menu</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Main Menu</h1>
+    <p>Current Balance: {{ balance }}</p>
+    <ul>
+        <li><a href="/deposit">Deposit Money</a></li>
+        <li><a href="/withdraw">Withdraw Money</a></li>
+        <li><a href="/balance">Check Balance</a></li>
+        <li><a href="/">Logout</a></li>
+    </ul>
+</body>
+</html>
